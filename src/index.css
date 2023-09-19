@@ -1,13 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  background-color:#19191A ;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-gradient:disabled {
+  background-image: linear-gradient(45deg,#7c30ff,#ff5e5e);
+  opacity: .5;
+  cursor: pointer;
+}
+
+.btn-gradient {
+  transition: background-image .5s ease;
+  background-image: linear-gradient(45deg,#7c30ff,#ff5e5e);
+  outline: 2px solid transparent;
+}
+
+.btn-gradient {
+  padding: 10px 32px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #7c30ff;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+
+.lds-dual-ring {
+  display: inline-block;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-primary {
+  padding: 10px 32px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #7c30ff;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  text-transform: uppercase;
 }
